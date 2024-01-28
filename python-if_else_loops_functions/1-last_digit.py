@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+p_number = number
 if number < 0:
 	p_number = number * -1
 	last = p_number % 10
