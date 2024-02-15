@@ -4,7 +4,6 @@
 
 class Square():
     """This Class represent a Square with fixed size
-    
     Atributes:
     __size(int) - size of Square which initialized as 0
     """
