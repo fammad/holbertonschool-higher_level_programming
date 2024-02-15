@@ -9,7 +9,6 @@ class Square():
     __size(int) - size of Square which initialized as 0
     """
     def __init__(self, size=0):
-    """This Class represent a Square with fixed"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
