@@ -12,12 +12,7 @@ class Square():
     """This Class represent a Square with fixed size
     
     Atributes:
-    __size(int) - size of Square which initialized as 0
-
-    Raises:
-            TypeError: If size is not an integer
-            ValueError: If size is less than 0
-    """
+    __size(int) - size of Square which initialized as 0 """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
