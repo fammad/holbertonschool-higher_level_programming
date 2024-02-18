@@ -3,7 +3,7 @@
 
 
 class Square():
-    """Defines class"""
+    """Square class"""
 
     def __init__(self, size = 0):
         """Initialize square object that size of 0"""
@@ -13,9 +13,9 @@ class Square():
     def size(self):
         """Getter method that returns private atribute __size"""
         return self.__size
+
     @size_setter
     def size(self, value):
-        """Setter the private size value """
         if isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
