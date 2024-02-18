@@ -14,6 +14,7 @@ class Square():
         return self.__size
     @size_setter
     def size(self, value):
+        """Setter the private size value """
         if isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -21,4 +22,5 @@ class Square():
         self.__size = value
 
     def area(self):
+        """Method that calculates size of Square"""
         return (self.__size ** 2)
