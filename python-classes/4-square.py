@@ -1,27 +1,27 @@
 #!/usr/bin/python3
-""" Defines Square class"""
+"""Define a class Square"""
 
 
 class Square():
     """Square class"""
 
-    def __init__(self, size = 0):
-        """Initialize square object that size of 0"""
+    def __init__(self, size=0):
+        """Initializer for square class"""
         self.__size = size
 
     @property
     def size(self):
-        """Getter method that returns private atribute __size"""
+        """Size of square"""
         return self.__size
 
-    @size_setter
+    @size.setter
     def size(self, value):
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     def area(self):
-        """Method that calculates size of Square"""
+        """Area of square"""
         return (self.__size ** 2)
