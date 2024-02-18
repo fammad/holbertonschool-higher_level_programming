@@ -10,9 +10,9 @@ class Square():
 
     @property
     def size(self):
-    """Getter method that returns private atribute __size"""
+        """Getter method that returns private atribute __size"""
         return self.__size
-    @size_setter
+    @size.setter
     def size(self, value):
         if isinstance(value, int):
             raise TypeError("size must be an integer")
