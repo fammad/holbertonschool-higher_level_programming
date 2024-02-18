@@ -76,4 +76,5 @@ class Square:
             for i in range(self.__size):
                 print("#" * self.__size, end="")
                 if i < self.__size - 1 and y > 0:
+                    print()
                 print()
