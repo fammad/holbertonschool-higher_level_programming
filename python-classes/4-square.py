@@ -10,7 +10,7 @@ class Square():
 
     @property
     def size(self):
-    """Getter method that returns private atribute __size"""
+        """Getter method that returns private atribute __size"""
         return self.__size
     @size_setter
     def size(self, value):
