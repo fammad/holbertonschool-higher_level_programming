@@ -49,5 +49,3 @@ class Rectangle:
     def __str__(self):
         """Prints the rectangle based on of its width and height"""
         return ((self.width * "#" + '\n') * self.height).strip('\n')
-
-
